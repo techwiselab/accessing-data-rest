@@ -16,7 +16,7 @@ git tag 1.0
 
 # Push the commit and the tag to the remote repository:
 
-push origin main --tags
+git push origin main --tags
 ```
 
 
