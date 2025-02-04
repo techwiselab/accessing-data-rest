@@ -10,6 +10,16 @@ docker build -t accessing-data-rest:1.3 .
 docker run -p 8080:8080 accessing-data-rest:1.3
 
 
+```sh
+# Tag the commit with 1.0:
+git tag 1.0
+
+# Push the commit and the tag to the remote repository:
+
+push origin main --tags
+```
+
+
 ### Test
 
 ```sh
