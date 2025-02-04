@@ -38,7 +38,7 @@ jobs:
 
     - name: Run tests with Maven
       id: test
-      run: mvn clean test
+      run: mvn clean verify
       
     - name: Run tests and check coverage
       run: mvn test jacoco:report jacoco:check
