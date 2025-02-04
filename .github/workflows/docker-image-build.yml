@@ -40,6 +40,9 @@ jobs:
       id: test
       run: mvn clean test
       
+    - name: Run tests and check coverage
+      run: mvn test jacoco:report jacoco:check
+            
     - name: Set up Docker Buildx
     # This configuration ensures that the Docker image is only built and pushed when the event is a push to the main branch, not when a pull request is opened.
       if: github.event_name == 'push'
