@@ -39,9 +39,9 @@ jobs:
     - name: Run tests with Maven
       id: test
       run: mvn clean verify
-      
-    # - name: Run tests and check coverage
-    #   run: mvn test jacoco:report jacoco:check
+      # run: mvn clean test
+      # mvn clean test - will just run the test but will not verify if the coverage criteria has been met or not 
+
             
     - name: Set up Docker Buildx
     # This configuration ensures that the Docker image is only built and pushed when the event is a push to the main branch, not when a pull request is opened.
